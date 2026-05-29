@@ -1,0 +1,24 @@
+mdl 1.3;
+
+using state import *;
+
+import adobe::mtl::*;
+import adobe::util::*;
+import ::tex::gamma_mode;
+import ::state::normal;
+
+export material hockey_stick_227_Mat(*)
+  = adobe::mtl::standard(
+    translucence : float(0),
+    interiorColor : color(1.0, 1.0, 1.0),
+    indexOfRefraction : float(1.0000),
+    metallic : float(0.0),
+    baseColor : adobe::util::color_texture( texture_2d("hockey_stick_227/hockey_stick_227_mat_baseColor.png", ::tex::gamma_srgb) ),
+    roughness : adobe::util::float_texture( texture_2d("hockey_stick_227/hockey_stick_227_mat_roughness.png", ::tex::gamma_linear) ),
+    density : float(0),
+    glow : float(0.0),
+    opacity : float(1.0),
+    normal : ::state::normal(),
+    height : float(0.5),
+    heightScale : float(1.0)
+    );

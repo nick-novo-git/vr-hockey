@@ -1,0 +1,17 @@
+newmtl hockey_stick_227_Mat
+Ni 1.000
+Ka 0 0 0
+d 1.0
+Ke 0.0
+Kd 0 0 0
+adobe_map_normal hockey_stick_227/hockey_stick_227_mat_bumpMap.png
+map_Kd hockey_stick_227/hockey_stick_227_mat_baseColor.png
+Tr 0
+illum 7
+Ks 1 1 1
+adobe_map_roughness hockey_stick_227/hockey_stick_227_mat_roughness.png
+adobe_interior_color 1.0 1.0 1.0
+adobe_density 0
+map_Pm hockey_stick_227/hockey_stick_227_mat_metallic.png
+Ns 16
+adobe_translucence 0
