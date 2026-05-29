@@ -60,7 +60,7 @@ namespace HockeyStickhandling
 
         [Header("Stick Visual Model")]
         [SerializeField] private bool useHockeyStickModelVisual = true;
-        [SerializeField] private bool hidePhysicsBladeRenderer;
+        [SerializeField] private bool hidePhysicsBladeRenderer = true;
         [SerializeField] private bool showSimpleBladeVisual;
         [SerializeField] private string hockeyStickModelResourcePath = "Models/hockey_stick_227";
         [SerializeField] private string hockeyStickTextureResourcePath = "Models/hockey_stick_227/hockey_stick_227_mat_baseColor";

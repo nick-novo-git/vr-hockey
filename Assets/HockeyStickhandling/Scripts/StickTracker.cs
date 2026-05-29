@@ -175,7 +175,8 @@ namespace HockeyStickhandling
         [SerializeField] private float stickModelVisualScale = 0.012f;
         [SerializeField] private float stickModelVisualLength = 1.68f;
         [SerializeField] private bool alignStickModelBladeToPhysicsBlade = true;
-        [SerializeField] private Vector3 stickModelVisualRotationOffset = new Vector3(180.0f, 0.0f, 0.0f);
+        [SerializeField] private bool invertStickModelVisualUp;
+        [SerializeField] private Vector3 stickModelVisualRotationOffset = Vector3.zero;
         [SerializeField] private Vector3 stickModelVisualPositionOffset = new Vector3(0.0f, 0.045f, 0.0f);
 
         [Header("Smoothing")]
@@ -1641,6 +1642,11 @@ namespace HockeyStickhandling
 
             visualForward.Normalize();
             var visualUp = Vector3.Cross(visualForward, shaftDirection);
+            if (invertStickModelVisualUp)
+            {
+                visualUp = -visualUp;
+            }
+
             if (visualUp.sqrMagnitude < 0.0001f)
             {
                 visualUp = Vector3.up;
